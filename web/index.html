@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>基隆河的搶水大戰 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="bar">
+  <h1>🏞️ 基隆河的搶水大戰 <small>為什麼基隆河要大轉彎？</small></h1>
+  <nav id="chips" aria-label="時期"></nav>
+</header>
+
+<main id="view"></main>
+
+<div id="compass" title="指北針"><div class="needle"><span>北</span></div></div>
+
+<div id="tools">
+  <button id="rotate" title="自動旋轉">🔄 自動旋轉</button>
+  <button id="cut" title="把大地切開看地層">🔪 切開看地層</button>
+  <button id="names" class="on" title="顯示地名">🏷️ 地名</button>
+  <button id="top" title="從正上方看">⬇️ 從上面看</button>
+  <button id="home" title="回到建議的視角">🎯 建議視角</button>
+</div>
+
+<aside id="panel">
+  <button id="panelToggle" aria-label="收合說明">▾</button>
+  <div id="era"></div>
+  <h2 id="title"></h2>
+  <ul id="points"></ul>
+  <p id="tip"></p>
+  <div class="nav">
+    <button id="prev">◀ 上一步</button>
+    <button id="next" class="primary"></button>
+  </div>
+  <button id="replay" class="ghost"></button>
+  <p class="hint">🖱️ 拖曳可 360 度旋轉，滾輪可放大縮小（手機用手指拖曳、兩指縮放）</p>
+  <p class="credit">資料來源：林朝棨（1957）基隆河河川襲奪研究。地形為示意圖，比例不代表真實大小。</p>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+node_modules/
+# 影片算圖暫存（數 GB）
+video/build*/
+video/fbmap.png
+# 根目錄的成品影片（單檔超過 GitHub 100MB 上限；網頁用的壓縮版在 web_v3/keelung_river.mp4）
+/*.mp4
+# 討論用的參考圖片
+/why*.PNG
+/fbmap.jfif
+.claude/

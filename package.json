@@ -1,0 +1,23 @@
+{
+  "name": "keelung-river-3d",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "playwright-core": "^1.64.0",
+    "three": "^0.169.0"
+  },
+  "scripts": {
+    "build": "esbuild src/app.js --bundle --minify --format=iife --outfile=web/app.js && esbuild src/video.js --bundle --minify --format=iife --outfile=video/render.js",
+    "video": "node tools/make-video.mjs",
+    "build2": "esbuild src/video2.js --bundle --minify --format=iife --outfile=video/render2.js",
+    "video2": "node tools/make-video2.mjs",
+    "web2": "esbuild src/app2.js --bundle --minify --format=iife --outfile=web_v2/app.js",
+    "build3": "esbuild src/video3.js --bundle --minify --format=iife --outfile=video/render3.js",
+    "video3": "node tools/make-video3.mjs",
+    "build4": "esbuild src/video4.js --bundle --minify --format=iife --outfile=video/render4.js",
+    "video4": "node tools/make-video4.mjs",
+    "web3": "esbuild src/app3.js --bundle --minify --format=iife --outfile=web_v3/app.js"
+  },
+  "type": "module"
+}
